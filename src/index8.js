@@ -1,4 +1,4 @@
-const parseQuery = require('./queryParser');
+const parseQuery = require('./queryParser8');
 const readCSV = require('./csvReader');
 
 function evaluateCondition(row, clause) {
