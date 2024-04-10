@@ -1,5 +1,3 @@
-// src/queryParser.js
-
 function parseQuery(query) {
     const selectRegex = /SELECT (.+?) FROM (.+?)(?: WHERE (.*))?$/i;
     const match = query.match(selectRegex);
@@ -17,7 +15,6 @@ function parseQuery(query) {
     }
 }
 
-// src/queryParser.js
 function parseWhereClause(whereString) {
     const conditionRegex = /(.*?)(=|!=|>|<|>=|<=)(.*)/;
     return whereString.split(/ AND | OR /i).map(conditionString => {
